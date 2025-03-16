@@ -1,0 +1,154 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* Variables */
+:root {
+  /* Font */
+  --ff-primary: "Big Shoulders", sans-serif;
+
+  /* Colors */
+  --orange: #e28625;
+  --orange-body: #f8e1c8;
+  --blue: #006971;
+  --blue-body: #bfd9db;
+  --green: #004140;
+  --green-body: #bfcfcf;
+  --white: #f2f2f2;
+
+  /* Font Sizes */
+  --fs-1: 2.5rem;
+  --fs-2: 0.938rem;
+
+  /* Font Weights */
+  --fw-1: 700;
+  --fw-2: 400;
+}
+
+/* Utility Classes */
+/* Font */
+.ff-primary {
+  font-family: var(--ff-primary);
+}
+
+/* Colors */
+.white {
+  color: var(--white);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.orange-body {
+  color: var(--orange-body);
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.blue-body {
+  color: var(--blue-body);
+}
+
+.green {
+  color: var(--green);
+}
+
+.green-body {
+  color: var(--green-body);
+}
+
+/* Background Colors */
+.white-bg {
+  background-color: var(--white);
+}
+
+.orange-bg {
+  background-color: var(--orange);
+}
+
+.blue-bg {
+  background-color: var(--blue);
+}
+
+.green-bg {
+  background-color: var(--green);
+}
+
+/* Text Presets */
+.tp-1 {
+  font-size: var(--fs-1);
+  font-weight: var(--fw-1);
+}
+
+.tp-2 {
+  font-size: var(--fs-2);
+  font-weight: var(--fw-2);
+}
+
+/* Body */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
